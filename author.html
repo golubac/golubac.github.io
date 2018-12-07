@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;" charset="UTF-8">
+	<meta name="author" content="Nikola Golubovic">
+	<meta name="keywords" content="Author,licence">
+	<meta name="description" content="Information about author">
+	<title>Author</title>
+	<link rel="stylesheet" href="css/style.css" >
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico.jpg" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	
+</head>
+<body>
+	<div class="login">
+			<button onclick="signUp()" class="btn" >Sign Up</button>
+			<div id="id01" class="modal">
+				<form class="modal-content " action="nesto.php">
+				      <h1>Register</h1>
+				      <label for="email"><b>Email</b></label>
+				      <input type="text"  name="email" required><span class="warning"></span>
+				      
+				      <label for="psw"><b>Password</b></label>
+				      <input type="password"  name="psw" required><span class="warning"></span>
+				      
+				      <label for="psw-repeat"><b>Repeat Password</b></label>
+				      <input type="password"  name="psw-repeat" required><span class="warning"></span>
+				      
+				      <input type="checkbox" checked="checked" name="remember" class="cb"><span class="warning"></span>
+				      <label> Remember me </label>
+				      
+				      <p>By creating an account you agree to our <a href="#" class="tearms">Terms & Privacy</a>.</p>
+				      <div class="btns">
+				        <button type="button" onclick="exit1()" class="btn">Cancel</button>
+				        <button type="submit" class="btn">Sign Up</button>
+				      </div>
+			  	</form>
+			</div>
+			<button onclick="login()" class="btn" >Login</button>
+			<div id="id02" class="modal2">
+				<form class="modal-content" action="nesto.php">
+				      <h1>Login</h1>
+				      <label for="email">
+				      	<b>Email</b>
+				      </label>
+				      <input type="text"  name="email" required>
+				      <label for="psw">
+				      	<b>Password</b>
+				      </label>
+				      <input type="password"  name="psw" required>
+				      <input type="checkbox" checked="checked" name="remember" class="cb">
+				      <label> Remember me </label>
+				      <div class="btns">
+				        <button type="button" onclick="exit2()" class="btn">Cancel</button>
+				        <button type="submit" class="btn">login</button>
+				      </div>
+			  	</form>
+			</div>
+		</div>
+	<div id="all">
+		<header class="header">
+			<div class="container">
+				<div class="menu">
+					<div class="rez">
+						<hr>
+						<i class="fas fa-bars"></i>
+						<hr>
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							<li><a href="artist.html">The Artist</a></li>
+							<li><a href="gallery.html">Gallery</a></li>
+							<li><a href="contact.html">Contact Us</a></li>
+							<li class="low"><a href="author.html" >About Author</a></li>
+						</ul>
+					</div>
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="artist.html">The Artist</a></li>
+						<li><a href="gallery.html">Gallery</a></li>
+						<li><a href="contact.html">Contact Us</a></li>
+						<li><a href="author.html">About Author</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="clear"></div>
+		</header>
+		<h1 id="style"></h1>
+		<section id="atop">
+			<div class="container">
+				<img src="images/author.jpg" alt="author">
+				<p>
+					My name is Nikola Golubović. I am a beginner of the Web Front-end Programmer and I hope that during my studies I will succeed in perfecting my knowledge in this field. I have no experience on larger projects, but I also have no meaning (still for so much). In 2017, I entered the High ICT School. Before that I had no professional experience from Web Programming except for some of the novelties I've picked up from the internet.
+				</p>
+			</div>
+		</section>
+		<section id="contact">
+			<div class="container">
+				<div class="form">
+					<h3>Contact me</h3>
+					<div >
+						<label for="name" class="label">Name</label>
+						<input type="text" name="name" class="text"><span class="warning"></span>
+						
+						<label for="lname" class="label">Last name</label>
+						<input type="text" name="Lname" class="text"><span class="warning"></span>
+						
+						<label for="mail" class="label">Mail</label>
+						<input type="text" name="cemail" class="text"><span class="warning"></span>
+						
+						<label for="email" class="label">Your message</label>
+						<textarea name="messg" class="text" cols="1" rows="1"></textarea><span class="warning"></span>
+						<input type="submit" value="Submit" class="submit" id="contactBtn">
+					</div>
+				</div>
+			</div>			
+		</section>	
+		<footer id="footer">
+			<div class="container">
+				<div class="hr2"></div>
+				<div class="clear"></div>
+				<div class="name"><p>Nikola Golubovic 142/17</p></div>
+				<div class="seo">
+					<a href="sitemap.xml"><b>Site map</b></a>
+				</div>
+				<div class="left">
+					<p>Ravindra Tilo &copy; website </p>
+				</div>
+				<div class="social">
+					<ul>
+						<li>
+							<a href="dokumentacija.pdf">Dokumentacija</a>
+						</li>						
+						<li>
+							<a href="https://www.facebook.com"><i class="fab fa-facebook-f"></i></a>
+						</li>
+						<li>
+							<a href="https://www.twitter.com"><i class="fab fa-twitter"></i></a>
+						</li>
+						<li>
+							<a href="https://www.linkedin.com"><i class="fab fa-linkedin-in"></i></a>
+						</li>
+						<li>
+							<a href="https://www.deviantart.com"><i class="fab fa-deviantart"></i></a>
+						</li>
+					</ul>			
+				</div>
+				<div class="clear"></div>
+			</div>
+		</footer>
+	</div>
+</body>
+
+<script type="text/javascript" src="javascript/javascript.js"></script>
+<script type="text/javascript" src="javascript/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="javascript/jquery.js"></script>
+<script type="text/javascript" src="javascript/javascriptContact.js"></script>
+</html>

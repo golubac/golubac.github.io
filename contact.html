@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;" charset="UTF-8">
+	<meta name="author" content="Nikola Golubovic">
+	<meta name="keywords" content="Contact,Information,Art">
+	<meta name="description" content="Contact art information ">
+	<title>Contact</title>
+	<link rel="stylesheet" href="css/style.css" >
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico.jpg" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+	<div class="login">
+			<button onclick="signUp()" class="btn" >Sign Up</button>
+			<div id="id01" class="modal">
+				<form class="modal-content " action="nesto.php">
+				      <h1>Register</h1>
+				      <label for="email"><b>Email</b></label>
+				      <input type="text"  name="email" required><span class="warning"></span>
+				      
+				      <label for="psw"><b>Password</b></label>
+				      <input type="password"  name="psw" required><span class="warning"></span>
+				      
+				      <label for="psw-repeat"><b>Repeat Password</b></label>
+				      <input type="password"  name="psw-repeat" required><span class="warning"></span>
+				      
+				      <input type="checkbox" checked="checked" name="remember" class="cb"><span class="warning"></span>
+				      <label> Remember me </label>
+				      
+				      <p>By creating an account you agree to our <a href="#" class="tearms">Terms & Privacy</a>.</p>
+				      <div class="btns">
+				        <button type="button" onclick="exit1()" class="btn">Cancel</button>
+				        <button type="submit" class="btn">Sign Up</button>
+				      </div>
+			  	</form>
+			</div>
+			<button onclick="login()" class="btn" >Login</button>
+			<div id="id02" class="modal2">
+				<form class="modal-content" action="nesto.php">
+				      <h1>Login</h1><span class="warning"></span>
+				      <label for="email">
+				      	<b>Email</b><span class="warning"></span>
+				      </label>
+				      <input type="text"  name="email" required>
+				      <label for="psw">
+				      	<b>Password</b><span class="warning"></span>
+				      </label>
+				      <input type="password"  name="psw" required>
+				      <input type="checkbox" checked="checked" name="remember" class="cb">
+				      <label> Remember me </label><span class="warning"></span>
+				      <div class="btns">
+				        <button type="button" onclick="exit2()" class="btn">Cancel</button>
+				        <button type="submit" class="btn">login</button>
+				      </div>
+			  	</form>
+			</div>
+		</div>
+
+	<div id="all">
+		<header class="header">
+			<div class="container">
+				<div class="menu">
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="artist.html">The Artist</a></li>
+						<li><a href="gallery.html">Gallery</a></li>
+						<li><a href="contact.html">Contact Us</a></li>
+						<li><a href="author.html">About Author</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="clear"></div>
+		</header>
+		<div id="call">
+			<div class="container">
+				<div class="mid">
+	              <div id="map">
+	              </div>
+	              <script type="text/javascript">
+	                function initMap() {
+	                  var options = {
+	                    zoom:8,
+	                    center:{lat:44.796421,lng:20.503141 }
+	                  }
+		                  var map = new google.maps.Map(document.getElementById('map'),options);
+		                  var marker = new google.maps.Marker({position:{lat:44.797060,lng: 20.494129},
+	                    map:map
+	                    })
+	                  }
+	              </script>
+	            </div>
+	        </div>
+		</div>	
+		<div id="cbot">
+			<div id="style"></div>
+			<div class="container">
+				<div class="left">
+					<h3>Contact us</h3>
+					<p>SomeAddress <br><b>Belgrade 3/2</b></p>
+					<p>
+					Do you have other questions?  Don’t worry, there aren’t any dumb questions.
+					Just fill out the form on the right and we’ll get back to you as soon as possible
+					(usually within one business day).You can also call us at ->
+					</p>
+					<ul>
+						<li><i class="fas fa-phone"></i>&nbsp; 065-678-544</li>
+						<li><i class="fas fa-envelope"></i>&nbsp; RavindraTilo@gmail.com</li>
+						<li><i class="fab fa-facebook-f"></i>&nbsp;&nbsp;&nbsp;&nbsp;Find us on Facebook</li>
+					</ul>
+					
+				</div>
+				<div class="right" id="contact">
+					<div  class="form">
+						<label for="name">Your Name</label>
+						<input type="text" class="text" name="name"><span class="warning"></span>
+
+						<label for="Lname">Last Name</label>
+						<input type="text" class="text" name="Lname"><span class="warning"></span>
+
+						<label for="email">Your Email</label>
+						<input type="text" class="text" name="cemail"><span class="warning"></span>	
+
+						<label for="messg">Yout message</label>
+						<textarea name="messg" class="text"  cols="30" rows="1"></textarea><span class="warning"></span>
+						
+						<label> Send us your phone? </label>
+						<input type="checkbox"  name="remember" id='phone' ></br></br>
+						<input type="text" name='phone' class="text pho"><span class="warning"></span>
+						</br>	
+
+						<button class="btn" id="contactBtn">submit</button>
+					</div>
+				</div>
+				<div class="clear"></div>
+			</div>
+		</div>
+		<footer id="footer">
+			<div class="container">
+				<div class="hr2"></div>
+				<div class="clear"></div>
+				<div class="name"><p>Nikola Golubovic 142/17</p></div>
+				<div class="seo">
+					<a href="sitemap.xml"><b>Site map</b></a>
+				</div>
+				<div class="left">
+					<p>RavindraTilo&copy; website </p>
+				</div>
+				<div class="social">
+					<ul>
+						<li>
+							<a href="dokumentacija.pdf">Dokumentacija</a>
+						</li>						
+						<li>
+							<a href="https://www.facebook.com"><i class="fab fa-facebook-f"></i></a>
+						</li>
+						<li>
+							<a href="https://www.twitter.com"><i class="fab fa-twitter"></i></a>
+						</li>
+						<li>
+							<a href="https://www.linkedin.com"><i class="fab fa-linkedin-in"></i></a>
+						</li>
+						<li>
+							<a href="https://www.deviantart.com"><i class="fab fa-deviantart"></i></a>
+						</li>
+					</ul>			
+				</div>
+				<div class="clear"></div>
+			</div>
+		</footer>
+	</div>
+</body>
+<script type="text/javascript" src="javascript/javascript.js"></script>
+<script type="text/javascript" src="javascript/javascriptContact.js"></script>
+<script type="text/javascript" src="javascript/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="javascript/jquery.js"></script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBHV3jewQOOn0SCGtfkyxYzAylWh8Grixs&callback=initMap"></script>
+</html>

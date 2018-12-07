@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;" charset="UTF-8">
+	<meta name="author" content="Nikola Golubovic">
+	<meta name="keywords" content="Draw,Artist,art">
+	<meta name="description" content="Most famous artist">
+	<title>Main</title>
+	<link rel="stylesheet" href="css/style.css" >
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico.jpg" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+	<div class="login">
+			<button onclick="signUp()" class="btn" >Sign Up</button>
+			<div id="id01" class="modal">
+				<form class="modal-content " action="#">
+				      <h1>Register</h1>
+				      <label for="email"><b>Email</b></label>
+				      <input type="text"  name="email" required><span class="warning"></span>
+				      
+				      <label for="psw"><b>Password</b></label>
+				      <input type="password"  name="psw" required><span class="warning"></span>
+				      
+				      <label for="psw-repeat"><b>Repeat Password</b></label>
+				      <input type="password"  name="psw-repeat" required><span class="warning"></span>
+				      
+				      <input type="checkbox" checked="checked" name="remember" class="cb"><span class="warning"></span>
+				      <label> Remember me </label>
+				      
+				      <p>By creating an account you agree to our <a href="#" class="tearms">Terms & Privacy</a>.</p>
+				      <div class="btns">
+				        <button type="button" onclick="exit1()" class="btn">Cancel</button>
+				        <button type="submit" class="btn" >Sign Up</button>
+				      </div>
+			  	</form>
+			</div>
+			<button onclick="login()" class="btn" >Login</button>
+			<div id="id02" class="modal2">
+				<form class="modal-content" action="#">
+				      <h1>Login</h1>
+				      <label for="email">
+				      	<b>Email</b><span class="warning"></span>
+				      </label>
+				      <input type="text"  name="email" required>
+				      <label for="psw">
+				      	<b>Password</b><span class="warning"></span>
+				      </label>
+				      <input type="password"  name="psw" required>
+				      <input type="checkbox" checked="checked" name="remember" class="cb">
+				      <label> Remember me </label><span class="warning"></span>
+				      <div class="btns">
+				        <button type="button" onclick="exit2()" class="btn">Cancel</button>
+				        <button type="submit" class="btn">login</button>
+				      </div>
+			  	</form>
+			</div>
+		</div>
+	<div id="all">
+		<header class="header">
+			<div class="container">
+				<div class="menu">
+					<ul>
+						<li><a href="index.html" class="top">Home</a></li>
+						<li><a href="artist.html" class="top">The Artist</a></li>
+						<li><a href="gallery.html" class="top">Gallery</a></li>
+						<li><a href="contact.html" class="top">Contact Us</a></li>
+						<li><a href="author.html" class="top">About Author</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="clear"></div>
+		</header>
+		<section id="middle">
+			<div class="container ">
+				<h1 class="top">THIS WORLD IS BUT A CANVAS TO OUR <span id='style'>IMAGINATION</spa>.</h1>
+				<div class="img-slide">
+					<ul>
+						<li><img src="images/img1.jpeg" alt="tehnical art" ></li>
+						<li><img src="images/img2.jpeg" alt="art supplies"></li>
+						<li class="trd"><img src="images/img3.jpeg" alt="Main artist"></li>
+						<li><img src="images/img4.jpeg" alt="Art school"></li>
+					</ul>
+				</div>	
+				<div class="pgf">
+					<h2>We send custom painting equipment</h2>
+					<div class="hr"></div>
+					<h3>Hand made, <br> Anything you need regarding ART we got it </h3>
+					<div class="hr hr2"></div>
+				</div>
+				<div class="clear"></div>
+			</div>
+		</section>
+		<section class="bottom">
+			<div class="container">
+				<div class="design">
+					<div class="image">
+						<img src="images/img6.jpeg"  alt="Gallery">
+					</div>
+					<div class="text top" >
+						<p>Art <b>gallery</b> is a building or space for the exhibition of art, usually visual art. Museums can be public or private, but what distinguishes a museum is the ownership of a collection. Paintings are the most commonly displayed art objects; however, sculptures, decorative arts, furniture, textiles, costumes, drawings, pastels, watercolors, collages, prints, artist's books, photographs, and installation art are also regularly shown. Although primarily concerned with providing a space to show works of visual art, art galleries are sometimes used to host other artistic activities, such as performance arts, music concerts, or poetry readings</p>
+					</div>
+					<div class="clear"></div>
+				</div>
+				<div class="art">
+					<div class="image">
+						<img src="images/img5.jpeg" alt="Author">
+					</div>
+					<div class="text top">
+						<p>An <b>artist's</b> portfolio is an edited collection of their best artwork intended to showcase an artist's style or method of work. A portfolio is used by artists to show employers their versatility by showing different samples of current work. Typically, the work reflects an artist's best work or a depth in one specific area of work.
+                        Historically, portfolios were printed out and placed into a book. With the increased use of the internet and email, however, there are now websites that host online portfolios that are available to a wider audience. Sometimes an artist's portfolio can be referred to as a lookbook.</p>
+					</div>
+					<div class="clear"></div>
+				</div>
+				
+			</div>
+		</section>
+		<footer id="footer">
+			<div class="container">
+				<div class="hr2"></div>
+				<div class="clear"></div>
+				<div class="name"><p>Nikola Golubovic 142/17</p></div>
+				<div class="seo">
+					<a href="sitemap.xml"><b>Site map</b></a>
+				</div>
+
+				<div class="left">
+					<p>Ravindra Tilo &copy; website </p>
+				</div>
+				<div class="social">
+					<ul>
+						<li>
+							<a href="dokumentacija.pdf">Dokumentacija</a>
+						</li>			
+						<li>
+							<a href="https://www.facebook.com"><i class="fab fa-facebook-f"></i></a>
+						</li>
+						<li>
+							<a href="https://www.twitter.com"><i class="fab fa-twitter"></i></a>
+						</li>
+						<li>
+							<a href="https://www.linkedin.com"><i class="fab fa-linkedin-in"></i></a>
+						</li>
+						<li>
+							<a href="https://www.deviantart.com"><i class="fab fa-deviantart"></i></a>
+						</li>
+					</ul>			
+				</div>
+				<div class="clear"></div>
+			</div>
+		</footer>
+	</div>
+</body>
+<script type="text/javascript" src="javascript/javascript.js"></script>
+<script type="text/javascript" src="javascript/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="javascript/jquery.js"></script>
+</html>
